@@ -6,6 +6,42 @@
   margin: auto;
   height: 100%;
   padding: 0 1rem;
-  background-color: grey;
+  background-color: lightgrey;
   /* background-color: var(--background-color); */
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.item1 {
+  order: 0;
+}
+.item2 {
+  order: 1;
+}
+.nameaboutme {
+  font-size: 40px;
+  font-weight: bold;
+}
+.descriptionaboutme {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+  }
+  .item1 {
+    order: 1;
+  }
+  .item2 {
+    order: 0;
+  }
 }
