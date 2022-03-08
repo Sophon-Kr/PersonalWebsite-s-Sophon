@@ -3,7 +3,10 @@ import { connect } from "react-redux";
 
 export const Education = (props) => {
   return (
-    <div style={{ backgroundColor: "pink", height: "100vh" }}>
+    <div 
+    className="education"
+      id="education"
+    style={{ backgroundColor: "pink", height: "100vh" }}>
       Education Ad leggings keytar, brunch id art party dolor labore. Pitchfork
       yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
       rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's

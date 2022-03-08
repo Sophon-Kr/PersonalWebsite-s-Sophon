@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 
 export const Skills = (props) => {
   return (
-    <div style={{ backgroundColor: "yellow", height: "100vh" }}>
+    <div
+      className="skills"
+      id="skills"
+      style={{ backgroundColor: "yellow", height: "100vh" }}
+    >
       Skills Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr
       enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights
       whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo

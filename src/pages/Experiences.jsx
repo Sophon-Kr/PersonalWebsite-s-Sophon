@@ -3,7 +3,10 @@ import { connect } from "react-redux";
 
 export const Experiences = (props) => {
   return (
-    <div style={{ backgroundColor: "lightgrey", height: "100vh" }}>
+    <div 
+    className="experiences"
+      id="experiences"
+    style={{ backgroundColor: "lightgrey", height: "100vh" }}>
       Experiences Ad leggings keytar, brunch id art party dolor labore.
       Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table
       bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan

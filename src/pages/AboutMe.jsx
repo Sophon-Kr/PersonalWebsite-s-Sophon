@@ -3,7 +3,16 @@ import { connect } from "react-redux";
 
 export const AboutMe = (props) => {
   return (
-    <div style={{ backgroundColor: "lightcyan", height: "100vh" }}>
+    <div
+      className="aboutme"
+      id="aboutme"
+      style={{
+        backgroundColor: "lightcyan",
+        height: "100vh",
+        paddingTop: "65px",
+        padding: "5%",
+      }}
+    >
       About me Ad leggings keytar, brunch id art party dolor labore. Pitchfork
       yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle
       rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's
