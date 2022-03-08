@@ -14,13 +14,14 @@ const Navbar = () => {
     <div className="header">
       <nav className="navbar">
         <Link to="aboutme" className="logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" /> 
+          {/* <span className="logoname">SOPHON</span> */}
         </Link>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <FaTimes size={30} style={{ color: "#212121" }} />
+            <FaTimes size={30} style={{ color: "#b55139" }} />
           ) : (
-            <FaBars size={30} style={{ color: "#212121" }} />
+            <FaBars size={30} style={{ color: "#476040" }} />
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>

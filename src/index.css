@@ -4,6 +4,12 @@
   --secondary-color: #ffea00;
   --secondary-dark: #e3d002;
   --overlay: rgba(0, 0, 0, 0.7);
+  --background-color: #efeeea;
+  --green1-color: #d2dac3;
+  --green2-color: #789174;
+  --green3-color: #476040;
+  --orange1-color: #ed8733;
+  --orange2-color: #b55139;
 }
 
 * {
