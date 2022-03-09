@@ -1,28 +1,20 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../assets/aboutme.css";
+import profile from "../assets/profile.png";
 
 export const AboutMe = (props) => {
   return (
-    <div
-      className="aboutme"
-      id="aboutme"
-      style={{
-        backgroundColor: "#efeeea",
-        height: "100vh",
-        paddingTop: "65px",
-        padding: "5%",
-      }}
-    >
+    <div className="aboutme" id="aboutme">
       <div className="maincontainer container">
         <div className="item1">
           <div className="nameaboutme">I am Sophon Kraipinit</div>
           <div className="descriptionaboutme">
             Lorem Ipsum is simply dummy text of the printing and <br></br>
             typesetting industry. Lorem Ipsum has been the industry's <br></br>
-            standard dummy text ever since the 1500s, when an 
+            standard dummy text ever since the 1500s, when an
             <br></br>
-            took a galley of type and scrambled it to make a type 
+            took a galley of type and scrambled it to make a type
             <br></br>
             It has survived not only five centuries, but also
             <br></br>
@@ -32,7 +24,10 @@ export const AboutMe = (props) => {
             <br></br>
           </div>
         </div>
-        <div className="item2">I am Sophon Kraipinit2222</div>
+        <div className="item2">
+          {/* I am Sophon Kraipinit2222 */}
+          <img src={profile} alt="Profile" className="img-profile" />
+        </div>
       </div>
     </div>
   );

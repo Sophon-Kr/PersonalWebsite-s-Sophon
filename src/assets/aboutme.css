@@ -1,3 +1,7 @@
+.aboutme .div {
+  padding-top: "65px";
+  /* height: "100vh"; */
+}
 .maincontainer {
   display: flex;
   justify-content: space-between;
@@ -6,14 +10,14 @@
   margin: auto;
   height: 100%;
   padding: 0 1rem;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   /* background-color: var(--background-color); */
 }
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 50px;
 }
 .item1 {
@@ -29,7 +33,17 @@
 .descriptionaboutme {
   margin-top: 15px;
 }
+.img-profile {
+  width: 300px;
+  height: auto;
+}
 
+#aboutme {
+  height: 100vh;
+  /* width: 100vw; */
+  background: #efeeea;
+  padding: 5%;
+}
 @media screen and (max-width: 940px) {
   .container {
     display: flex;
@@ -43,5 +57,24 @@
   }
   .item2 {
     order: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  #aboutme {
+    height: auto;
+
+    background: #efeeea;
+    padding: 100px 5% 5% 5%;
+  }
+  .maincontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: auto;
+    padding: 0 1rem;
+    /* background-color: lightgrey; */
+    /* background-color: var(--background-color); */
   }
 }
