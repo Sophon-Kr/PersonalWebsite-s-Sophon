@@ -1,0 +1,104 @@
+.maincontainer-skills {
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap;
+  gap: 40px;
+  background-color: bisque;
+}
+.container-skills-web {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 70px;
+  padding: 5% 10%;
+  background-color: salmon;
+}
+.container-skills-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 70px;
+  padding: 5% 10%;
+  background-color: rgb(163, 251, 163);
+}
+
+#skills {
+  /* height: 100vh; */
+  min-height: 100vh;
+  background: var(--background-color);
+  padding: 5%;
+}
+
+.header-skills {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: start;
+}
+.card-skills {
+  background-color: grey;
+  min-height: 400px;
+  min-width: 300px;
+  border-radius: 20px;
+  padding: 15px;
+}
+.item-skills {
+  background-color: grey;
+  min-height: 100px;
+  min-width: 100px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+/* .papereducation-1 {
+  background-color: var(--background-color);
+  min-height: 250px;
+  border-radius: 20px;
+  box-shadow: -0.8px -0.8px 3.3px rgba(0, 0, 0, 0.032),
+    6.3px 6.2px 10.1px rgba(0, 0, 0, 0.048), 69px 67px 62px rgba(0, 0, 0, 0.08);
+  display: flex;
+}
+.papereducation-2 {
+  background-color: var(--background-color);
+  min-height: 250px;
+  border-radius: 20px;
+  box-shadow: -0.8px -0.8px 3.3px rgba(0, 0, 0, 0.032),
+    6.3px 6.2px 10.1px rgba(0, 0, 0, 0.048), 69px 67px 62px rgba(0, 0, 0, 0.08);
+  display: flex;
+} */
+/* .textmu {
+  margin-left: 80px;
+  padding: 30px;
+}
+.textskwk {
+  margin-right: 80px;
+  margin-left: 50px;
+  padding: 30px;
+  flex-grow: 1;
+} */
+
+/* .imgeducation {
+  width: auto;
+  height: 250px;
+  border-radius: 20px;
+  margin: -20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+} */
+
+@media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 880px) {
+}
