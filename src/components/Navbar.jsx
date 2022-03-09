@@ -26,17 +26,6 @@ const Navbar = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            {/* <Link
-              activeClass="active"
-              to="test1"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={50}
-              onSetActive={this.handleSetActive}
-            >
-              Test 1
-            </Link> */}
             <Link
               to="aboutme"
               spy={true}

@@ -10,12 +10,19 @@ export const Education = (props) => {
       <div className="maincontainer-education">
         <div className="headereducation">Education </div>
         <div className="container-education">
-          <div className="papereducation">
+          <div className="papereducation-1">
             <img src={MU} alt="Mahidol-University" className="imgeducation" />
-            <div className="textmu">Mahidol University</div>
+            <div className="textmu">
+              Mahidol University
+              <div>Mahidol University</div>
+            </div>
           </div>
-          <div className="papereducation">
-            <div className="textskwk">Srikanuan witthayakom</div>
+          <div className="papereducation-2">
+            <div className="textskwk">
+              Srikanuan witthayakom
+              <div>Srikanuan witthayakom</div>
+            </div>
+
             <img
               src={SKWK}
               alt="Srikranuanwittayakom-School"

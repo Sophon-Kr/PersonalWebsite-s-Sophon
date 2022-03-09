@@ -1,6 +1,5 @@
 .aboutme .div {
   padding-top: "65px";
-  /* height: "100vh"; */
 }
 .maincontainer {
   display: flex;
@@ -40,7 +39,6 @@
 
 #aboutme {
   height: 100vh;
-  /* width: 100vw; */
   background: #efeeea;
   padding: 5%;
 }
@@ -57,6 +55,7 @@
   }
   .item2 {
     order: 0;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 375px) {

@@ -41,6 +41,11 @@ ul {
 a {
   text-decoration: none;
 }
+/* .section {
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+} */
 
 .button {
   padding: 17px 28px;
