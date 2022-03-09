@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: start;
   flex-wrap: nowrap;
-  gap: 40px;
-  background-color: bisque;
+  /* gap: 40px; */
+  /* background-color: bisque; */
 }
 .container-skills-web {
   display: flex;
@@ -16,8 +16,8 @@
   align-items: center;
   flex-wrap: nowrap;
   gap: 70px;
-  padding: 5% 10%;
-  background-color: salmon;
+  padding: 3% 5% 5% 5%;
+  /* background-color: salmon; */
 }
 .container-skills-other {
   display: flex;
@@ -27,37 +27,64 @@
   flex-wrap: nowrap;
   gap: 70px;
   padding: 5% 10%;
-  background-color: rgb(163, 251, 163);
+  background-color: var(--green1-color);
+  border-radius: 20px;
 }
 
 #skills {
   /* height: 100vh; */
   min-height: 100vh;
   background: var(--background-color);
-  padding: 5%;
+  padding: 3%;
 }
 
-.header-skills {
+.header-skills-1 {
   padding: 10px;
   font-size: 30px;
   font-weight: bold;
   align-self: start;
 }
+.header-skills-2 {
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  align-self: start;
+}
 .card-skills {
-  background-color: grey;
   min-height: 400px;
   min-width: 300px;
   border-radius: 20px;
-  padding: 15px;
+  padding: 20px;
+  background-color: white;
+  /* background-color: var(--green1-color); */
+}
+.header-text-skills {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
 }
 .item-skills {
-  background-color: grey;
-  min-height: 100px;
-  min-width: 100px;
+  background-color: var(--background-color);
+  min-height: 125px;
+  min-width: 125px;
   border-radius: 20px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
+.center-text {
+  /* align-self: center; */
+  text-align: center;
+}
+.size-icon {
+  /* align-self: center; */
+  width: 40px;
+  height: auto;
+  margin-bottom: 5px;
+}
 /* .papereducation-1 {
   background-color: var(--background-color);
   min-height: 250px;
