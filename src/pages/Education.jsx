@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../assets/education.css";
+import "../style/education.css";
 import MU from "../assets/MU.jpg";
 import SKWK from "../assets/SKWK.jpg";
 

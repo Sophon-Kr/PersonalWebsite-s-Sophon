@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../assets/skills.css";
+import "../style/skills.css";
 import { SiAdobephotoshop } from "react-icons/si";
 import { FaJava, FaDatabase } from "react-icons/fa";
 import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";

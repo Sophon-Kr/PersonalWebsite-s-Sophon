@@ -5,7 +5,7 @@ import ProjectEx from "../components/ProjectEx";
 import Certificate from "../components/Certificate";
 import Activity from "../components/Activity";
 import Hobbies from "../components/Hobbies";
-import Charateristic from "../components/Charateristic";
+// import Charateristic from "../components/Charateristic";
 
 export const Experiences = (props) => {
   return (
@@ -19,7 +19,7 @@ export const Experiences = (props) => {
       <Certificate />
       <Activity />
       <Hobbies />
-      <Charateristic />
+      {/* <Charateristic /> */}
     </div>
   );
 };

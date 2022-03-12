@@ -1,0 +1,60 @@
+.maincontainer-workex {
+  max-width: 1240px;
+  margin: auto;
+  /* height: 100%; */
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  /* background-color: bisque; */
+}
+#workex {
+  /* height: 100vh; */
+  background: var(--green1-color);
+  padding: 5%;
+}
+.workex-img {
+  width: auto;
+  height: 100%;
+}
+.workex-header {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.container-workex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  /* align-items: stretch; */
+  gap: 70px;
+  /* padding: 5% 10%; */
+  /* background-color: salmon; */
+}
+
+/* .imgeducation {
+  width: auto;
+  height: 250px;
+  border-radius: 20px;
+  margin: -20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+} */
+
+@media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 375px) {
+  .workex-img {
+    max-width: 100%;
+    height: auto;
+  }
+}

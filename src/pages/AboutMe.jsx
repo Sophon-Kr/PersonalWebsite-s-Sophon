@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import "../assets/aboutme.css";
+import "../style/aboutme.css";
 import profile from "../assets/profile.png";
 
 export const AboutMe = (props) => {
