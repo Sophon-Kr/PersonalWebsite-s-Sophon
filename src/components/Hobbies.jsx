@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/hobbies.css";
-import { SiAdobephotoshop } from "react-icons/si";
 import { GrPersonalComputer } from "react-icons/gr";
 import { GiMicrophone } from "react-icons/gi";
 import { GiCactusPot } from "react-icons/gi";

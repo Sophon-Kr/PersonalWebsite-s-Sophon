@@ -1,32 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/activity.css";
-const activityList = [
-  {
-    id: 1,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-  {
-    id: 2,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-  {
-    id: 3,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-  {
-    id: 4,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-  {
-    id: 5,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-  {
-    id: 6,
-    text: "The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller.",
-  },
-];
 
 export const Activity = (props) => {
   return (

@@ -48,7 +48,7 @@ export const Certificate = (props) => {
         <div className="certificate-header">Certification</div>
         <div className="container-certificate">
           {certificateList.map((data) => (
-            <div className="card-certificate">
+            <div key={data.id} className="card-certificate">
               {data.icon} {data.text}
             </div>
           ))}
