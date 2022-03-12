@@ -7,6 +7,7 @@ import AboutMe from "./pages/AboutMe";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Experiences from "./pages/Experiences";
+import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Education />
       <Skills />
       <Experiences />
+      <Contact />
 
       {/* <BrowserRouter>
         <Routes>
