@@ -1,0 +1,112 @@
+.maincontainer-activity {
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+  /* background-color: bisque; */
+}
+#activity {
+  background: var(--background-color);
+  padding: 3%;
+  /* height: 100vh; */
+}
+.activity-header {
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  align-self: start;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.activity-timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  /* margin: 0 auto; */
+  position: relative;
+}
+.activity-timeline ul {
+  list-style: none;
+}
+.activity-timeline ul li {
+  padding: 20px;
+  background-color: var(--green1-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.activity-timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.activity-timeline ul li:hover:after {
+  background-color: var(--green2-color);
+}
+.activity-timeline ul :hover {
+  /* padding: 20px; */
+  background-color: var(--green2-color);
+  /* border-radius: 20px; */
+  /* margin-bottom: 20px; */
+}
+@media only screen and (min-width: 940px) {
+  .activity-timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 52%;
+    transform: translateX(-50%);
+    background-color: var(--green3-color);
+  }
+  .activity-timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .activity-timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .activity-timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  .activity-timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--orange1-color);
+    border-radius: 50%;
+    top: 0;
+  }
+  .activity-timeline ul li:nth-child(odd)::after {
+    right: -8%;
+    transform: translate(50%, -50%);
+    /* transform: translateX(40px); */
+  }
+  .activity-timeline ul li:nth-child(even)::after {
+    left: -8%;
+    transform: translate(-50%, -50%);
+    /* transform: translateX(40px); */
+  }
+}

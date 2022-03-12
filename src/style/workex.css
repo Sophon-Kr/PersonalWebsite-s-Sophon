@@ -36,6 +36,10 @@
   /* padding: 5% 10%; */
   /* background-color: salmon; */
 }
+.descroption-workex {
+  max-width: 400px;
+  background-color: salmon;
+}
 
 /* .imgeducation {
   width: auto;
