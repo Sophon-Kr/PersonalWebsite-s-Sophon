@@ -9,6 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
+import { styled } from "@mui/material/styles";
 
 const contactList = [
   {
@@ -36,10 +37,28 @@ const contactList = [
   },
 ];
 
+const CssTextField = styled(TextField)({
+  "& label.Mui-focused": {
+    color: "green",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "green",
+  },
+  "& .MuiOutlinedInput-root": {
+    // "& fieldset": {
+    //   borderColor: "red",
+    // },
+    // "&:hover fieldset": {
+    //   borderColor: "yellow",
+    // },
+    "&.Mui-focused fieldset": {
+      borderColor: "#476040",
+    },
+  },
+});
 export const Contact = (props) => {
   return (
     <div className="contact" id="contact">
-      {/* <div className="contact-header">Hobbies</div> */}
       <div className="maincontainer-contact">
         <div className="container-contact-left">
           <h1 className="header-text-contact-form">Contact Information</h1>
@@ -59,24 +78,27 @@ export const Contact = (props) => {
 
         <div className="container-contact-right">
           <h1 className="header-text-contact-form">Send Message</h1>
-          <TextField
+          <CssTextField
             id="outlined-basic"
             label="Your Email"
             variant="outlined"
             className="message-textfield"
+            required
           />
-          <TextField
+          <CssTextField
             id="outlined-basic"
             label="Topic"
             variant="outlined"
             className="message-textfield"
+            required
           />
-          <TextField
+          <CssTextField
             id="outlined-basic"
             label="Detail"
             variant="outlined"
             className="message-textfield"
             multiline
+            required
             rows={4}
           />
           <div className="button-component ">
