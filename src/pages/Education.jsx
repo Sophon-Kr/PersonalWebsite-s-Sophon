@@ -14,13 +14,23 @@ export const Education = (props) => {
             <img src={MU} alt="Mahidol-University" className="imgeducation" />
             <div className="textmu">
               Mahidol University
-              <div>Mahidol University</div>
+              <div>
+                This defines the default behavior for how flex items are laid
+                out along the cross axis on the current line. Think of it as the
+                justify-content version for the cross-axis (perpendicular to the
+                main-axis).
+              </div>
             </div>
           </div>
           <div className="papereducation-2">
             <div className="textskwk">
               Srikanuan witthayakom
-              <div>Srikanuan witthayakom</div>
+              <div>
+                This defines the default behavior for how flex items are laid
+                out along the cross axis on the current line. Think of it as the
+                justify-content version for the cross-axis (perpendicular to the
+                main-axis).
+              </div>
             </div>
 
             <img

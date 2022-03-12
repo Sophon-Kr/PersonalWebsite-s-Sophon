@@ -4,10 +4,11 @@ import "../style/contact.css";
 import TextField from "@mui/material/TextField";
 import { AiFillHome } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
-import { BsTelephoneFill } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 
 const contactList = [
   {
@@ -15,9 +16,8 @@ const contactList = [
     icon: <AiFillHome className="icon-contact" />,
     text: (
       <span>
-        <div>107/7 Phimul Village,</div>
-        <div>Phimul,Huai Mek,Kalasin;</div>
-        <div>Thailand 46170</div>
+        <div>107/7 Phimul Village,Phimul,</div>
+        <div>Huai Mek,Kalasin;Thailand </div>
       </span>
     ),
     linkto: "",
@@ -30,26 +30,8 @@ const contactList = [
   },
   {
     id: 3,
-    icon: <FaFacebookSquare className="icon-contact" />,
-    text: "Sophon Kraipinit",
-    linkto: "",
-  },
-  {
-    id: 4,
-    icon: <BsLinkedin className="icon-contact" />,
-    text: "Sophon Kraipinit",
-    linkto: "",
-  },
-  {
-    id: 5,
-    icon: <BsTelephoneFill className="icon-contact" />,
-    text: "(+66)096-002-4634",
-    linkto: "",
-  },
-  {
-    id: 6,
-    icon: <AiFillGithub className="icon-contact" />,
-    text: "Sophon-Kr",
+    icon: <FaPhoneSquareAlt className="icon-contact" />,
+    text: "(+66) 096-002-4634",
     linkto: "",
   },
 ];
@@ -67,7 +49,14 @@ export const Contact = (props) => {
               <div>{data.text}</div>
             </div>
           ))}
+          <div className="container-socialmedia">
+            <FaFacebookSquare className="icon-contact" />
+            <BsLinkedin className="icon-contact" />
+            <AiFillGithub className="icon-contact" />
+            <AiFillInstagram className="icon-contact" />
+          </div>
         </div>
+
         <div className="container-contact-right">
           <h1 className="header-text-contact-form">Send Message</h1>
           <TextField

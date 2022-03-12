@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: start;
   flex-wrap: nowrap;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .container-certificate {
   display: flex;

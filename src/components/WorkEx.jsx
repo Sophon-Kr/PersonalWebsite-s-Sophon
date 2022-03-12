@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/workex.css";
-import workIMG from "../assets/MU.jpg";
+import workIMG from "../assets/MSC.jpg";
 
 export const WorkEx = (props) => {
   return (
