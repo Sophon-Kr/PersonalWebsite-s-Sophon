@@ -1,0 +1,101 @@
+.maincontainer-contact {
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* background-color: bisque; */
+}
+#contact {
+  background: var(--green1-color);
+  padding: 3%;
+  height: 50vh;
+}
+.container-contact-left {
+  min-width: 400px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  /* background-color: rgb(196, 255, 216); */
+}
+.container-contact-right {
+  min-width: 400px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(253, 196, 255); */
+  gap: 20px;
+}
+.header-text-contact-form {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--green3-color);
+}
+
+.contact-component-text {
+  margin-right: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.icon-contact {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+.message-textfield {
+  background-color: var(--background-color);
+  width: 100%;
+}
+.button-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.button-contact-style-send {
+  min-width: 130px;
+  min-height: 40px;
+  background-color: var(--green2-color);
+  padding: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: var(--background-color);
+  border-color: var(--green3-color);
+  border-style: solid;
+}
+.button-contact-style-cancel {
+  min-width: 130px;
+  min-height: 40px;
+  background-color: var(--orange1-color);
+  padding: 5px;
+  border-radius: 15px;
+  border-color: var(--green3-color);
+  font-weight: bold;
+  color: var(--background-color);
+  border-style: solid;
+}
+.button-contact-style-send:hover {
+  background-color: var(--green3-color);
+  transition-duration: 0.4s;
+}
+.button-contact-style-cancel:hover {
+  transition-duration: 0.4s;
+  background-color: var(--orange2-color);
+}

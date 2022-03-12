@@ -2,8 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 import "../style/hobbies.css";
 import { SiAdobephotoshop } from "react-icons/si";
-import { FaJava, FaDatabase } from "react-icons/fa";
-import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";
+import { GrPersonalComputer } from "react-icons/gr";
+import { GiMicrophone } from "react-icons/gi";
+import { GiCactusPot } from "react-icons/gi";
+import { GiCampCookingPot } from "react-icons/gi";
+import { MdDraw } from "react-icons/md";
+import { Icon } from "@iconify/react";
 
 const hobbiesList = [
   {
@@ -16,7 +20,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <FaJava className="size-icon"></FaJava>
+        <GrPersonalComputer className="size-icon"></GrPersonalComputer>
       </div>
     ),
   },
@@ -29,7 +33,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+        <GiMicrophone className="size-icon"></GiMicrophone>
       </div>
     ),
   },
@@ -43,7 +47,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+        <Icon icon="mdi:badminton" className="size-icon" />
       </div>
     ),
   },
@@ -57,7 +61,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+        <GiCactusPot className="size-icon"></GiCactusPot>
       </div>
     ),
   },
@@ -70,7 +74,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+        <GiCampCookingPot className="size-icon"></GiCampCookingPot>
       </div>
     ),
   },
@@ -83,7 +87,7 @@ const hobbiesList = [
     ),
     icon: (
       <div className="center-text">
-        <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+        <MdDraw className="size-icon"></MdDraw>
       </div>
     ),
   },
