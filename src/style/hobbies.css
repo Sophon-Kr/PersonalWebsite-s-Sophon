@@ -1,0 +1,37 @@
+.maincontainer-hobbies {
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* background-color: bisque; */
+}
+#hobbies {
+  background: var(--background-color);
+  padding: 3%;
+  /* height: 100vh; */
+}
+.hobbies-header {
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  padding: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.item-hobbies {
+  background-color: var(--background-color);
+  min-height: 125px;
+  min-width: 125px;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

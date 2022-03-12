@@ -31,8 +31,8 @@ const activityList = [
 export const Activity = (props) => {
   return (
     <div className="activity" id="activity">
+      <div className="activity-header">Extracurricular Activities</div>
       <div className="maincontainer-activity">
-        {/* <div className="activity-header">Activity</div> */}
         <div className="activity-timeline">
           <ul>
             <li>
