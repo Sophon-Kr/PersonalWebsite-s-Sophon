@@ -55,7 +55,8 @@
 }
 .card-skills {
   min-height: 400px;
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   border-radius: 20px;
   padding: 20px;
   background-color: white;
