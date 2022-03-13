@@ -133,3 +133,11 @@
     order: 1;
   }
 }
+@media screen and (max-width: 420px) {
+  .container-contact-right {
+    min-width: 320px;
+  }
+  .container-contact-left {
+    min-width: 320px;
+  }
+}

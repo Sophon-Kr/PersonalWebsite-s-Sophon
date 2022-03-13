@@ -44,8 +44,8 @@ const certificateList = [
 export const Certificate = (props) => {
   return (
     <div className="certificate" id="certificate">
+      <div className="certificate-header">Certification</div>
       <div className="maincontainer-certificate ">
-        <div className="certificate-header">Certification</div>
         <div className="container-certificate">
           {certificateList.map((data) => (
             <div key={data.id} className="card-certificate">

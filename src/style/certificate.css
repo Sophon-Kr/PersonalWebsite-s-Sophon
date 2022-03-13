@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: start;
   flex-wrap: nowrap;
+  overflow-x: auto;
   /* background-color: bisque; */
 }
 .container-certificate {
@@ -39,10 +40,15 @@
 }
 
 .certificate-header {
-  padding: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  padding: 20px;
   font-size: 30px;
   font-weight: bold;
   align-self: start;
+  /* background-color: aqua; */
 }
 
 .card-certificate {
@@ -53,8 +59,18 @@
   background-color: var(--background-color);
   /* background-color: var(--green1-color); */
 }
+.container-certificate::-webkit-scrollbar {
+  width: 0;
+}
 
 @media screen and (max-width: 940px) {
+  .container-certificate {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    min-width: 0;
+  }
 }
-@media screen and (max-width: 880px) {
-}
+/* @media screen and (max-width: 880px) {
+} */

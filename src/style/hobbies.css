@@ -6,8 +6,14 @@
   /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
+  overflow-x: auto;
   /* flex-wrap: wrap; */
   /* background-color: bisque; */
+  gap: 10px;
+  min-width: 0;
+}
+.maincontainer-hobbies::-webkit-scrollbar {
+  width: 0;
 }
 #hobbies {
   background: var(--background-color);
@@ -35,3 +41,17 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 940px) {
+  .maincontainer-hobbies {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    min-width: 0;
+  }
+}
+/* @media screen and (max-width: 420px) {
+  .container-contact-right {
+    min-width: 320px;
+  }
+} */

@@ -15,8 +15,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 70px;
+  gap: 40px;
   padding: 3% 5% 5% 5%;
+  overflow-x: auto;
   /* background-color: salmon; */
 }
 .container-skills-other {
@@ -124,8 +125,21 @@
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
     100px 100px 80px rgba(0, 0, 0, 0.07);
 } */
+.container-skills-web::-webkit-scrollbar {
+  width: 0;
+}
 
 @media screen and (max-width: 940px) {
+  .container-skills-web {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: auto;
+    min-width: 0;
+    gap: 40px;
+  }
+}
+/* @media screen and (max-width: 940px) {
 }
 @media screen and (max-width: 880px) {
-}
+} */
