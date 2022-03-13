@@ -1,7 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/skills.css";
-import { SiAdobephotoshop } from "react-icons/si";
+import {
+  SiAdobephotoshop,
+  SiPython,
+  SiAdobeillustrator,
+  SiAdobexd,
+  SiCplusplus,
+  SiC,
+  SiMicrosoftoffice,
+} from "react-icons/si";
 import { FaJava, FaDatabase } from "react-icons/fa";
 import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";
 
@@ -23,6 +31,45 @@ const otherSkills = [
     id: 2,
     text: (
       <span className="center-text">
+        <div>Python</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiPython className="size-icon"></SiPython>
+      </div>
+    ),
+  },
+  {
+    id: 3,
+    text: (
+      <span className="center-text">
+        <div>C</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiC className="size-icon"></SiC>
+      </div>
+    ),
+  },
+  {
+    id: 4,
+    text: (
+      <span className="center-text">
+        <div>C++</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiCplusplus className="size-icon"></SiCplusplus>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    text: (
+      <span className="center-text">
         <div>Adobe</div>
         <div>Photoshop</div>
       </span>
@@ -30,6 +77,46 @@ const otherSkills = [
     icon: (
       <div className="center-text">
         <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    text: (
+      <span className="center-text">
+        <div>Adobe XD</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiAdobexd className="size-icon"></SiAdobexd>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    text: (
+      <span className="center-text">
+        <div>Adobe</div>
+        <div>Illustrator</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiAdobeillustrator className="size-icon"></SiAdobeillustrator>
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    text: (
+      <span className="center-text">
+        <div>MS office</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiMicrosoftoffice className="size-icon"></SiMicrosoftoffice>
       </div>
     ),
   },
@@ -49,7 +136,7 @@ export const Skills = (props) => {
                   marginLeft: "15px",
                 }}
               >
-                Database
+                Database PostgreSQL, MongoDB SQL,
               </span>
             </div>
           </div>
@@ -61,7 +148,8 @@ export const Skills = (props) => {
                   marginLeft: "15px",
                 }}
               >
-                Front-End
+                Front-End JavaScript React.js Vue.js Material-UI,
+                Bootstrap,HTML, CSS,
               </span>
             </div>
           </div>
@@ -74,6 +162,8 @@ export const Skills = (props) => {
                 }}
               >
                 Back-End
+                <br />
+                Node.js
               </span>
             </div>
           </div>

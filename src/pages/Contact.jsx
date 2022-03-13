@@ -59,6 +59,7 @@ const CssTextField = styled(TextField)({
 export const Contact = (props) => {
   return (
     <div className="contact" id="contact">
+      
       <div className="maincontainer-contact">
         <div className="container-contact-left">
           <h1 className="header-text-contact-form">Contact Information</h1>

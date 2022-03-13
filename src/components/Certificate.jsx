@@ -7,37 +7,53 @@ const certificateList = [
     id: 1,
     icon: (
       <div className="certificate-center-icon">
-        <GrGamepad className="certificate-icon" />
+        <img
+          src="https://img.icons8.com/ios-filled/100/000000/medal-window.png"
+          alt="medal-icon"
+          className="certificate-icon"
+        />
       </div>
     ),
-    text: "stretch (default): stretch to fill the container (still respect min-width/max-width)",
+    text: "The Digital Literacy Assessment Level 2, ICDL,2018",
   },
   {
     id: 2,
     icon: (
       <div className="certificate-center-icon">
-        <GrGamepad className="certificate-icon" />
+        <img
+          src="https://img.icons8.com/ios-filled/100/000000/macbook-medal.png"
+          alt="medal-icon"
+          className="certificate-icon"
+        />
       </div>
     ),
-    text: "stretch (default): stretch to fill the container (still respect min-width/max-width)",
+    text: "Gold medal, Web page creation competition, category Web Editor, Arts and Crafts students 2017 (Provincial level)",
   },
   {
     id: 3,
     icon: (
       <div className="certificate-center-icon">
-        <GrGamepad className="certificate-icon" />
+        <img
+          src="https://img.icons8.com/ios-filled/100/000000/macbook-medal.png"
+          alt="medal-icon"
+          className="certificate-icon"
+        />
       </div>
     ),
-    text: "stretch (default): stretch to fill the container (still respect min-width/max-width)",
+    text: "Bronze medal, Web page creation competition, category Web Editor, Arts and Crafts students 2016 (region level)	",
   },
   {
     id: 4,
     icon: (
       <div className="certificate-center-icon">
-        <GrGamepad className="certificate-icon" />
+        <img
+          src="https://img.icons8.com/ios-filled/100/000000/macbook-medal.png"
+          alt="medal-icon"
+          className="certificate-icon"
+        />
       </div>
     ),
-    text: "stretch (default): stretch to fill the container (still respect min-width/max-width)",
+    text: "Gold medal, Web page creation competition, category Web Editor, Arts and Crafts students 2016 (Provincial level)",
   },
 ];
 

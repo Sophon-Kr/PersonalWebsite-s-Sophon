@@ -113,6 +113,7 @@
   background-color: var(--orange2-color);
 }
 
+
 @media screen and (max-width: 940px) {
   .maincontainer-contact {
     max-width: 1240px;

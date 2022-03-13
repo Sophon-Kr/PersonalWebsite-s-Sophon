@@ -1,33 +1,37 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/projectex.css";
-// import workIMG from "../assets/MU.jpg";
 import { GrGamepad } from "react-icons/gr";
+import { GoBrowser } from "react-icons/go";
+import { BsCashCoin } from "react-icons/bs";
+import { MdGames } from "react-icons/md";
+import { BiDonateHeart } from "react-icons/bi";
+
 const dataProjectEXP = [
   {
     id: 1,
-    icon: <GrGamepad className="project-size-icon" />,
-    text: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    icon: <GoBrowser className="project-size-icon" />,
+    text: "Develope a full satack website of Senior Project, using React.js and node.js for Mathematical model for calculating COVID-19 ",
   },
   {
     id: 2,
     icon: <GrGamepad className="project-size-icon" />,
-    text: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    text: "Developed a Java-GUI Game project, using Object-oriented programming and concept of farm game",
   },
   {
     id: 3,
-    icon: <GrGamepad className="project-size-icon" />,
-    text: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    icon: <BsCashCoin className="project-size-icon" />,
+    text: "Developed a C program project, using C programming for Income and Expense Account Program",
   },
   {
     id: 4,
-    icon: <GrGamepad className="project-size-icon" />,
-    text: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    icon: <MdGames className="project-size-icon" />,
+    text: "Developed a C++ program project, using C++ programming about survival from  PM 2.5 game",
   },
   {
     id: 5,
-    icon: <GrGamepad className="project-size-icon" />,
-    text: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
+    icon: <BiDonateHeart className="project-size-icon" />,
+    text: "Developed a demo about donation website project, using mongoDB  for a database and adobe XD  for a demo website",
   },
 ];
 

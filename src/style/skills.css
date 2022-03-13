@@ -25,11 +25,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 70px;
-  padding: 5% 10%;
+  padding: 5% 20%;
   background-color: var(--green1-color);
   border-radius: 20px;
+  /* background-color: salmon; */
 }
 
 #skills {
@@ -54,7 +55,7 @@
 }
 .card-skills {
   min-height: 400px;
-  min-width: 300px;
+  width: 300px;
   border-radius: 20px;
   padding: 20px;
   background-color: white;
@@ -104,8 +105,16 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .container-skills-other {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 35px;
+    padding: 5% 10%;
+    overflow-x: auto;
   }
 }

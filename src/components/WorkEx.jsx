@@ -11,10 +11,8 @@ export const WorkEx = (props) => {
         <div className="container-workex">
           <img className="workex-img" src={workIMG} alt="MSC IMG" />
           <div className="descroption-workex">
-            This defines the default behavior for how flex items are laid out
-            along the cross axis on the current line. Think of it as the
-            justify-content version for the cross-axis (perpendicular to the
-            main-axis).
+            Metro Systems Corporation Plc. BangKok THAILAND (July 2021-December
+            2021) Full Stack Developer (Internship)
           </div>
         </div>
       </div>
