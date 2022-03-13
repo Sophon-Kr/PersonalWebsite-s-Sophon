@@ -50,8 +50,10 @@
     min-width: 0;
   }
 }
-/* @media screen and (max-width: 420px) {
-  .container-contact-right {
-    min-width: 320px;
+@media screen and (max-width: 420px) {
+  .hobbies-header {
+    padding: 30px;
+    font-size: 40px;
+    margin-bottom: 0;
   }
-} */
+}

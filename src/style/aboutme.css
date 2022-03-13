@@ -21,6 +21,7 @@
 }
 .item1 {
   order: 0;
+  max-width: 500px;
 }
 .item2 {
   order: 1;
@@ -52,6 +53,7 @@
   }
   .item1 {
     order: 1;
+    max-width: 370px;
   }
   .item2 {
     order: 0;

@@ -63,14 +63,18 @@
   width: 0;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1300px) {
   .container-certificate {
     display: flex;
     justify-content: start;
     align-items: center;
     overflow-x: auto;
     min-width: 0;
+    gap: 30px;
   }
 }
-/* @media screen and (max-width: 880px) {
-} */
+@media screen and (max-width: 880px) {
+  .container-certificate {
+    gap: 30px;
+  }
+}

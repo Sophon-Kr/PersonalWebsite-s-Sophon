@@ -114,3 +114,8 @@
     /* transform: translateX(40px); */
   }
 }
+@media screen and (max-width: 550px) {
+  .activity-header {
+    font-size: 35px;
+  }
+}

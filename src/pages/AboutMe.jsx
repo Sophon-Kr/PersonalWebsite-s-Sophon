@@ -10,18 +10,12 @@ export const AboutMe = (props) => {
         <div className="item1">
           <div className="nameaboutme">I am Sophon Kraipinit</div>
           <div className="descriptionaboutme">
-            Lorem Ipsum is simply dummy text of the printing and <br></br>
-            typesetting industry. Lorem Ipsum has been the industry's <br></br>
-            standard dummy text ever since the 1500s, when an
-            <br></br>
-            took a galley of type and scrambled it to make a type
-            <br></br>
-            It has survived not only five centuries, but also
-            <br></br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an took a galley of type and scrambled it
+            to make a type It has survived not only five centuries, but also
             electronic typesetting, remaining essentially unchanged. It was
-            <br></br>
             popularised in the 1960s with the release of Letraset sheets
-            <br></br>
           </div>
         </div>
         <div className="item2">
