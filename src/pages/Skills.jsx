@@ -18,12 +18,12 @@ const otherSkills = [
     id: 1,
     text: (
       <span className="center-text">
-        <div>Java</div>
+        <div>Python</div>
       </span>
     ),
     icon: (
       <div className="center-text">
-        <FaJava className="size-icon"></FaJava>
+        <SiPython className="size-icon"></SiPython>
       </div>
     ),
   },
@@ -31,12 +31,12 @@ const otherSkills = [
     id: 2,
     text: (
       <span className="center-text">
-        <div>Python</div>
+        <div>Java</div>
       </span>
     ),
     icon: (
       <div className="center-text">
-        <SiPython className="size-icon"></SiPython>
+        <FaJava className="size-icon"></FaJava>
       </div>
     ),
   },

@@ -9,6 +9,8 @@ import Skills from "./pages/Skills";
 import Experiences from "./pages/Experiences";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Activity from "./components/Activity";
+import Hobbies from "./components/Hobbies";
 
 function App() {
   const store = configureStore();
@@ -19,6 +21,8 @@ function App() {
       <Education />
       <Skills />
       <Experiences />
+      <Activity />
+      <Hobbies />
       <Contact />
 
       {/* <BrowserRouter>

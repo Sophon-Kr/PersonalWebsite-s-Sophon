@@ -73,18 +73,30 @@ const Navbar = () => {
               Experiences
             </Link>
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <Link
-              to="contact"
+              to="activity"
               spy={true}
               smooth={true}
               offset={-60}
               duration={50}
               onClick={closeMenu}
             >
+              Activity
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="hobbies"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={50}
+              onClick={closeMenu}
+            >
               Contact
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>
