@@ -182,11 +182,23 @@
     margin-bottom: 50px;
   } */
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 550px) {
   .container-contact-right {
     min-width: 320px;
   }
   .container-contact-left {
     min-width: 320px;
+  }
+  .button-component-download {
+    width: 300px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid var(--green3-color);
+    border-radius: 15px;
+    padding: 10px;
   }
 }
