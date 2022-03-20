@@ -6,14 +6,14 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 20px;
 }
 .container-education {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  gap: 70px;
+  gap: 50px;
   padding: 5% 10%;
 }
 
@@ -31,10 +31,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+}
+.education-text {
+  color: var(--green3-color);
 }
 
 .education-text:hover {
-  border-bottom: 5px solid var(--orange2-color);
+  border-bottom: 5px solid var(--background-color);
 }
 .papereducation-1 {
   min-height: 250px;
@@ -45,10 +49,14 @@
   display: flex;
 }
 .textmu {
+  font-size: 22px;
   margin-left: 80px;
   padding: 30px;
+  line-height: 150%;
 }
 .textskwk {
+  font-size: 22px;
+  line-height: 150%;
   margin-right: 80px;
   margin-left: 50px;
   padding: 30px;
@@ -57,14 +65,45 @@
 
 .imgeducation {
   width: auto;
-  height: 250px;
+  height: 260px;
   margin: -20px;
+  padding: 15px;
+  background-image: linear-gradient(
+      to left,
+      transparent 200px,
+      var(--background-color) 200px
+    ),
+    linear-gradient(to bottom, transparent 200px, var(--background-color) 200px),
+    linear-gradient(to right, transparent 200px, var(--background-color) 200px),
+    linear-gradient(to top, transparent 200px, var(--background-color) 200px);
+  background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+  background-size: 100% 4px, 4px 100%;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1200px) {
   .imgeducation {
     width: auto;
     height: 180px;
+    background-image: linear-gradient(
+        to left,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 100px,
+        var(--background-color) 100px
+      ),
+      linear-gradient(
+        to right,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(to top, transparent 100px, var(--background-color) 100px);
+    background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+    background-size: 100% 4px, 4px 100%;
+    background-repeat: no-repeat;
   }
   .papereducation-1 {
     min-height: 200px;
@@ -83,11 +122,10 @@
     justify-content: center;
     flex-wrap: nowrap;
     gap: 40px;
-    /* background-color: bisque; */
+    margin-bottom: 20px;
   }
   .container-education {
     padding: 0;
-    /* background-color: salmon; */
   }
   #education {
     height: auto;
@@ -99,25 +137,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    /* background-color: var(--background-color); */
     min-height: 250px;
-
-    /* border-radius: 20px; */
-    /* box-shadow: -0.8px -0.8px 3.3px rgba(0, 0, 0, 0.032),
-      6.3px 6.2px 10.1px rgba(0, 0, 0, 0.048),
-      69px 67px 62px rgba(0, 0, 0, 0.08); */
   }
   .papereducation-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    /* background-color: var(--background-color); */
     min-height: 250px;
-    /* border-radius: 20px; */
-    /* box-shadow: -0.8px -0.8px 3.3px rgba(0, 0, 0, 0.032),
-      6.3px 6.2px 10.1px rgba(0, 0, 0, 0.048),
-      69px 67px 62px rgba(0, 0, 0, 0.08); */
   }
   .textmu {
     margin-left: 5px;
@@ -139,6 +166,7 @@
     align-self: center;
     text-align: center;
   }
+
   .education-text:hover {
     border-bottom: 10px solid var(--orange2-color);
   }
@@ -147,5 +175,24 @@
     align-self: center;
     width: 100%;
     height: auto;
+    background-image: linear-gradient(
+        to left,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to right,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(to top, transparent 200px, var(--background-color) 200px);
+    background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+    background-size: 100% 4px, 4px 100%;
+    background-repeat: no-repeat;
   }
 }

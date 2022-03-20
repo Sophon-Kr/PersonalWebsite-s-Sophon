@@ -10,31 +10,68 @@ export const Education = (props) => {
     <div className="education " id="education">
       <div className="maincontainer-education">
         <div className="headereducation">
-          <GiBookshelf></GiBookshelf>
-          <span className="education-text">Education</span>
+          <GiBookshelf style={{ color: "#789174" }}></GiBookshelf>
+          <span className="education-text">
+            <span style={{ color: "#b55139" }}>E</span>du
+            <span style={{ color: "#789174" }}>c</span>ati
+            <span style={{ color: "#ed8733" }}>o</span>n
+          </span>
         </div>
         <div className="container-education">
           <div className="papereducation-1">
-            <img src={MU} alt="Mahidol-University" className="imgeducation" />
+            <div className="bordery">
+              <img src={MU} alt="Mahidol-University" className="imgeducation" />
+            </div>
+
             <div className="textmu">
-              Collage
+              <div
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "26px",
+                  lineHeight: "200%",
+                  color: "#476040",
+                }}
+              >
+                Collage
+              </div>
               <div>
-                •2018-Present Faculty of Engineering, Major in Computer
-                Engineering,Mahidol University
+                <span>Years : </span>
+                <span>2018-Present </span>
+              </div>
+              <div>
+                <span>
+                  Faculty of Engineering, Major in Computer Engineering,Mahidol
+                  University
+                </span>
               </div>
             </div>
           </div>
           <div className="papereducation-2">
             <div className="textskwk">
-              Hight School
-              <div>2012-2017 Srikranuanwittayakom School (Science - Math)</div>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "26px",
+                  lineHeight: "200%",
+                  color: "#476040",
+                }}
+              >
+                Hight School
+              </div>
+              <div>
+                <span>Years : </span>
+                <span>2012-2017</span>
+              </div>
+              <div>Srikranuanwittayakom School (Science - Math)</div>
             </div>
 
-            <img
-              src={SKWK}
-              alt="Srikranuanwittayakom-School"
-              className="imgeducation"
-            />
+            <div className="bordery">
+              <img
+                src={SKWK}
+                alt="Srikranuanwittayakom-School"
+                className="imgeducation"
+              />
+            </div>
           </div>
         </div>
       </div>
