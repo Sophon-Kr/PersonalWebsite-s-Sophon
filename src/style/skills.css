@@ -91,8 +91,11 @@
   height: auto;
   margin-bottom: 5px;
 }
-.container-skills-web::-webkit-scrollbar {
-  width: 0;
+.container-skills-web::-webkit-scrollbar-track {
+  background: var(--green1-color);
+}
+.container-skills-other::-webkit-scrollbar-track {
+  background: var(--green1-color);
 }
 .skill-container-list {
   display: flex;
@@ -104,6 +107,7 @@
   /* flex-wrap: wrap; */
   gap: 20px;
 }
+
 .skill-item-list {
   display: flex;
   flex-direction: column;

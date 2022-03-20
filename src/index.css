@@ -67,3 +67,26 @@ a {
   margin: 5px auto;
   background-color: var(--primary-color);
 }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.4em;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border-radius: 100vw;
+  margin-block: 0.1em;
+  margin-right: 0.6em;
+  margin-left: 0.6em;
+  padding: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ed8733;
+  border-radius: 100vw;
+
+  /* border: 0.25em solid #fff; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #789174;
+  border-radius: 100vw;
+}
