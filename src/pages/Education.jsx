@@ -3,12 +3,16 @@ import { connect } from "react-redux";
 import "../style/education.css";
 import MU from "../assets/MU.jpg";
 import SKWK from "../assets/SKWK.jpg";
+import { GiBookshelf } from "react-icons/gi";
 
 export const Education = (props) => {
   return (
     <div className="education " id="education">
       <div className="maincontainer-education">
-        <div className="headereducation">Education </div>
+        <div className="headereducation">
+          <GiBookshelf></GiBookshelf>
+          <span className="education-text">Education</span>
+        </div>
         <div className="container-education">
           <div className="papereducation-1">
             <img src={MU} alt="Mahidol-University" className="imgeducation" />

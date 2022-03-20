@@ -9,19 +9,19 @@
   margin: auto;
   height: 100%;
   padding: 0 1rem;
-  /* background-color: lightgrey; */
-  /* background-color: var(--background-color); */
 }
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: nowrap;
   gap: 50px;
 }
 .item1 {
   order: 0;
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .item2 {
   order: 1;
@@ -29,9 +29,15 @@
 .nameaboutme {
   font-size: 40px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--green3-color);
 }
 .descriptionaboutme {
   margin-top: 15px;
+  text-align: justify;
 }
 .img-profile {
   width: 300px;
@@ -43,12 +49,34 @@
   background: #efeeea;
   padding: 5%;
 }
+
+.nav-item-aboutme {
+  align-self: center;
+  text-align: center;
+  width: 150px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  border-bottom: 3px solid var(--green3-color);
+  background-color: var(--green1-color);
+  font-weight: bold;
+  color: var(--green3-color);
+  border-radius: 20px;
+}
+
+.nav-item-aboutme:hover {
+  border-bottom: 3px solid var(--orange1-color);
+}
+.interest-aboutme-text {
+  font-size: 22px;
+  color: var(--green3-color);
+  font-weight: bold;
+}
+
 @media screen and (max-width: 940px) {
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
     gap: 50px;
   }
   .item1 {
@@ -59,11 +87,13 @@
     order: 0;
     margin-top: 50px;
   }
+  .nav-item-aboutme {
+    margin-bottom: 15px;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   #aboutme {
     height: auto;
-
     background: #efeeea;
     padding: 100px 5% 5% 5%;
   }
@@ -71,11 +101,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    max-width: 350px;
     margin: auto;
     height: auto;
     padding: 0 1rem;
-    /* background-color: lightgrey; */
-    /* background-color: var(--background-color); */
+  }
+  .item1 {
+    max-width: 300px;
+  }
+  .nav-item-aboutme {
+    margin-bottom: 15px;
   }
 }
