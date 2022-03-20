@@ -29,6 +29,7 @@
   font-weight: bold;
   justify-content: center;
   margin-bottom: 40px;
+  color: var(--green3-color);
 }
 .item-hobbies {
   background-color: var(--background-color);

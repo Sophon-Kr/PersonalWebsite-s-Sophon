@@ -91,7 +91,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     text: (
       <span className="center-text">
         <div>Adobe XD</div>
@@ -104,7 +104,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 5,
+    id: 7,
     text: (
       <span className="center-text">
         <div>Adobe</div>
@@ -118,7 +118,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 5,
+    id: 8,
     text: (
       <span className="center-text">
         <div>MS office</div>

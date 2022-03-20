@@ -86,7 +86,7 @@
   min-width: 130px;
   min-height: 40px;
   background-color: var(--green2-color);
-  padding: 5px;
+  padding: 10px;
   border-radius: 15px;
   font-weight: bold;
   color: var(--background-color);
@@ -97,7 +97,7 @@
   min-width: 130px;
   min-height: 40px;
   background-color: var(--orange1-color);
-  padding: 5px;
+  padding: 10px;
   border-radius: 15px;
   border-color: var(--green3-color);
   font-weight: bold;
@@ -112,7 +112,49 @@
   transition-duration: 0.4s;
   background-color: var(--orange2-color);
 }
-
+.button-component-download {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid var(--green3-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+.button-download-style-cv {
+  min-width: 130px;
+  min-height: 40px;
+  background-color: var(--green2-color);
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: var(--background-color);
+  border-color: var(--green3-color);
+  border-style: solid;
+}
+.button-download-style-resume {
+  min-width: 130px;
+  min-height: 40px;
+  background-color: var(--green2-color);
+  padding: 10px;
+  border-radius: 15px;
+  border-color: var(--green3-color);
+  font-weight: bold;
+  color: var(--background-color);
+  border-style: solid;
+}
+.button-download-style-cv:hover {
+  background-color: var(--background-color);
+  color: var(--green3-color);
+  transition-duration: 0.4s;
+}
+.button-download-style-resume:hover {
+  transition-duration: 0.4s;
+  color: var(--green3-color);
+  background-color: var(--background2-color);
+}
 
 @media screen and (max-width: 940px) {
   .maincontainer-contact {
@@ -133,6 +175,12 @@
   .container-contact-left {
     order: 1;
   }
+  .header-text-contact-form {
+    margin-top: 20px;
+  }
+  /* .container-socialmedia {
+    margin-bottom: 50px;
+  } */
 }
 @media screen and (max-width: 420px) {
   .container-contact-right {

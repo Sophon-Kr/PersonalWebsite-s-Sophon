@@ -10,6 +10,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { styled } from "@mui/material/styles";
+import { Link } from "react-scroll";
 
 const contactList = [
   {
@@ -59,7 +60,6 @@ const CssTextField = styled(TextField)({
 export const Contact = (props) => {
   return (
     <div className="contact" id="contact">
-      
       <div className="maincontainer-contact">
         <div className="container-contact-left">
           <h1 className="header-text-contact-form">Contact Information</h1>
@@ -74,6 +74,19 @@ export const Contact = (props) => {
             <BsLinkedin className="icon-contact" />
             <AiFillGithub className="icon-contact" />
             <AiFillInstagram className="icon-contact" />
+          </div>
+          <div className="button-component-download">
+            <div
+              style={{
+                fontWeight: "bold",
+                fontSize: "px",
+                color: "#476040",
+              }}
+            >
+              Download :
+            </div>
+            <button className="button-download-style-cv">CV</button>
+            <button className="button-download-style-resume">Resume</button>
           </div>
         </div>
 
