@@ -17,12 +17,26 @@
   padding: 5%;
 }
 .workex-img {
-  max-width: 500px;
-  height: auto;
+  width: auto;
+  height: 300px;
+  margin: -20px;
+  padding: 15px;
+  background-image: linear-gradient(
+      to left,
+      transparent 200px,
+      var(--background-color) 200px
+    ),
+    linear-gradient(to bottom, transparent 200px, var(--background-color) 200px),
+    linear-gradient(to right, transparent 200px, var(--background-color) 200px),
+    linear-gradient(to top, transparent 200px, var(--background-color) 200px);
+  background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+  background-size: 100% 4px, 4px 100%;
+  background-repeat: no-repeat;
 }
 .workex-header {
   font-weight: bolder;
-  font-size: 40px;
+  color: var(--green3-color);
+  font-size: 45px;
 }
 .container-workex {
   display: flex;
@@ -34,16 +48,40 @@
   gap: 70px;
 }
 .descroption-workex {
+  font-size: 22px;
   max-width: 400px;
+  padding-bottom: 20px;
+  border-bottom: 4px solid var(--background-color);
 }
 
 @media screen and (max-width: 940px) {
   .workex-img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 260px;
+    margin: -20px;
+    padding: 15px;
+    background-image: linear-gradient(
+        to left,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to right,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(to top, transparent 200px, var(--background-color) 200px);
+    background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+    background-size: 100% 4px, 4px 100%;
+    background-repeat: no-repeat;
   }
   .descroption-workex {
-    min-width: 90%;
+    min-width: 80%;
   }
   .container-workex {
     gap: 40px;
@@ -51,11 +89,33 @@
 }
 @media screen and (max-width: 375px) {
   .workex-img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 180px;
+    background-image: linear-gradient(
+        to left,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 100px,
+        var(--background-color) 100px
+      ),
+      linear-gradient(
+        to right,
+        transparent 200px,
+        var(--background-color) 200px
+      ),
+      linear-gradient(to top, transparent 100px, var(--background-color) 100px);
+    background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+    background-size: 100% 4px, 4px 100%;
+    background-repeat: no-repeat;
   }
   .workex-header {
     font-size: 35px;
     margin-top: 10px;
+  }
+  .descroption-workex {
+    max-width: 80%;
   }
 }

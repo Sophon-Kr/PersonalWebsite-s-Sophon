@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/projectex.css";
-import { GrGamepad } from "react-icons/gr";
+// import { GrGamepad } from "react-icons/gr";
+import { RiGamepadLine } from "react-icons/ri";
 import { GoBrowser } from "react-icons/go";
 import { BsCashCoin } from "react-icons/bs";
 import { MdGames } from "react-icons/md";
@@ -15,7 +16,7 @@ const dataProjectEXP = [
   },
   {
     id: 2,
-    icon: <GrGamepad className="project-size-icon" />,
+    icon: <RiGamepadLine className="project-size-icon" />,
     text: "Developed a Java-GUI Game project, using Object-oriented programming and concept of farm game",
   },
   {

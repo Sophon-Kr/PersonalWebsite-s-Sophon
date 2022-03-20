@@ -29,10 +29,12 @@
 .project-size-icon {
   width: 40px;
   height: auto;
+  color: var(--green3-color);
 }
 .projectex-header {
   font-weight: bolder;
-  font-size: 40px;
+  color: var(--green3-color);
+  font-size: 45px;
   margin: 10px 0 20px 0;
 }
 .project-description-text {

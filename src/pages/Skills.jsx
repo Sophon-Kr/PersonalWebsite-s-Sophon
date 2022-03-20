@@ -136,7 +136,9 @@ export const Skills = (props) => {
   return (
     <div className="skills" id="skills">
       <div className="maincontainer-skills">
-        <div className="header-skills-1">Web Skills </div>
+        <div className="header-skills-1">
+          <span className="w-header">W</span>eb Skills{" "}
+        </div>
         <div className="container-skills-web">
           <div className="card-skills">
             <div
@@ -144,9 +146,9 @@ export const Skills = (props) => {
               style={{ marginBottom: "20px" }}
             >
               <ImDatabase
-                style={{ width: "70px", height: "auto" }}
+                style={{ width: "70px", height: "auto", color: "#789174" }}
               ></ImDatabase>
-              <div>Database</div>
+              <div style={{ color: "#789174" }}>Database</div>
             </div>
             <div className="skill-container-list">
               <div className="skill-item-list">
@@ -166,9 +168,9 @@ export const Skills = (props) => {
           <div className="card-skills">
             <div className="header-text-skills">
               <RiComputerFill
-                style={{ width: "80px", height: "auto" }}
+                style={{ width: "80px", height: "auto", color: "#789174" }}
               ></RiComputerFill>
-              <div>Front-End</div>
+              <div style={{ color: "#789174" }}>Front-End</div>
             </div>
             <div className="skill-container-frontend-list">
               <div className="skill-container-list align-Self-center">
@@ -224,9 +226,9 @@ export const Skills = (props) => {
               style={{ marginBottom: "20px" }}
             >
               <RiCodeBoxFill
-                style={{ width: "80px", height: "auto" }}
+                style={{ width: "80px", height: "auto", color: "#789174" }}
               ></RiCodeBoxFill>
-              <div>Back-End</div>
+              <div style={{ color: "#789174" }}>Back-End</div>
             </div>
             <div className="align-Self-center">
               <div className="skill-item-list">

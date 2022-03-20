@@ -45,13 +45,22 @@
   font-size: 50px;
   font-weight: bold;
   align-self: center;
+  color: var(--green2-color);
 }
 .header-skills-2 {
+  color: var(--green2-color);
+  margin-top: 20px;
   padding: 10px;
   font-size: 35px;
   margin-bottom: 30px;
   font-weight: bold;
   align-self: center;
+}
+.w-header {
+  color: var(--green3-color);
+}
+.w-header:hover {
+  color: var(--orange1-color);
 }
 .card-skills {
   min-height: 400px;
@@ -138,8 +147,14 @@
     min-width: 0;
     gap: 40px;
   }
+
+  .header-skills-1 {
+    margin-top: 10px;
+  }
   .header-skills-2 {
     align-self: center;
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -155,4 +170,12 @@
     padding: 5% 10%;
     overflow-x: auto;
   }
+  .header-skills-1 {
+    margin-top: 10px;
+  }
+  .header-skills-2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
 }

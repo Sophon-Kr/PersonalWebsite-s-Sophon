@@ -32,6 +32,7 @@
   flex-direction: row;
   justify-content: center;
   margin-bottom: 10px;
+  /* text-align: justify; */
 }
 
 #certificate {
@@ -45,9 +46,10 @@
   justify-content: center;
   max-width: 1240px;
   padding: 20px;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bold;
   align-self: start;
+  color: var(--green3-color);
   /* background-color: aqua; */
 }
 
@@ -59,8 +61,13 @@
   background-color: var(--background-color);
   /* background-color: var(--green1-color); */
 }
-.container-certificate::-webkit-scrollbar {
+/* .container-certificate::-webkit-scrollbar {
   width: 0;
+} */
+.certificate-description {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
