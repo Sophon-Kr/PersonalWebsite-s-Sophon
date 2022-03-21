@@ -32,7 +32,7 @@ export const Education = (props) => {
                   color: "#476040",
                 }}
               >
-                Collage
+                College
               </div>
               <div>
                 <span>Years : </span>
@@ -56,7 +56,7 @@ export const Education = (props) => {
                   color: "#476040",
                 }}
               >
-                Hight School
+                High School
               </div>
               <div>
                 <span>Years : </span>
