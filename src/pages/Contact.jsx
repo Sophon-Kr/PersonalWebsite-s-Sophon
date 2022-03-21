@@ -10,7 +10,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { styled } from "@mui/material/styles";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const contactList = [
   {

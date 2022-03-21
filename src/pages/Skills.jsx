@@ -13,7 +13,6 @@ import {
   SiMongodb,
   SiJavascript,
   SiMaterialui,
-  SiBootstrap,
   SiHtml5,
   SiCss3,
   SiNodedotjs,
@@ -21,7 +20,6 @@ import {
 import { FaJava, FaReact, FaVuejs } from "react-icons/fa";
 import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";
 import { ImDatabase } from "react-icons/im";
-// import { SiPostgresql } from "react-icons/im";
 
 const otherSkills = [
   {
@@ -137,7 +135,7 @@ export const Skills = (props) => {
     <div className="skills" id="skills">
       <div className="maincontainer-skills">
         <div className="header-skills-1">
-          <span className="w-header">W</span>eb Development  Skills{" "}
+          <span className="w-header">W</span>eb Development Skills{" "}
         </div>
         <div className="container-skills-web">
           <div className="card-skills">
