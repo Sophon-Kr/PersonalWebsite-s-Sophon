@@ -146,7 +146,7 @@
   border-style: solid;
 }
 .button-download-style-cv:hover {
-  background-color: var(--background-color);
+  background-color: var(--background2-color);
   color: var(--green3-color);
   transition-duration: 0.4s;
 }

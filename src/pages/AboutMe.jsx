@@ -44,8 +44,10 @@ export const AboutMe = (props) => {
           </div>
         </div>
         <div className="item2">
-          {/* I am Sophon Kraipinit2222 */}
-          <img src={profile} alt="Profile" className="img-profile" />
+          <div className="container-img-profile">
+            <img src={profile} alt="Profile" className="img-profile" />
+          </div>
+          {/* <div className="behide-img"> </div> */}
         </div>
       </div>
     </div>
