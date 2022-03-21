@@ -70,10 +70,38 @@ export const Contact = (props) => {
             </div>
           ))}
           <div className="container-socialmedia">
-            <FaFacebookSquare className="icon-contact" />
-            <BsLinkedin className="icon-contact" />
-            <AiFillGithub className="icon-contact" />
-            <AiFillInstagram className="icon-contact" />
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://www.facebook.com/SophonKraipinit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebookSquare className="icon-contact" />
+            </a>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://www.linkedin.com/in/sophon-kraipinit-94b441202"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin className="icon-contact" />
+            </a>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://github.com/Sophon-Kr"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub className="icon-contact" />
+            </a>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://www.instagram.com/sophon_kr/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillInstagram className="icon-contact" />
+            </a>
           </div>
           <div className="button-component-download">
             <div

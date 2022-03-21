@@ -55,6 +55,18 @@
   width: 100%;
   gap: 70px;
 }
+.container-projectex-active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 70px;
+}
+.project-active:hover {
+  background-color: var(--green2-color);
+}
 
 @media screen and (max-width: 940px) {
   .container-projectex {

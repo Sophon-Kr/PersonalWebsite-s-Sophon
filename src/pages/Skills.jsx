@@ -137,7 +137,7 @@ export const Skills = (props) => {
     <div className="skills" id="skills">
       <div className="maincontainer-skills">
         <div className="header-skills-1">
-          <span className="w-header">W</span>eb Skills{" "}
+          <span className="w-header">W</span>eb Development  Skills{" "}
         </div>
         <div className="container-skills-web">
           <div className="card-skills">
