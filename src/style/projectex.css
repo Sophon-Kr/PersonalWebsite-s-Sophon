@@ -72,9 +72,22 @@
   .container-projectex {
     padding: 0 25px;
   }
+  .container-projectex-active {
+    padding: 0 25px;
+  }
 }
 @media screen and (max-width: 600px) {
   .container-projectex {
+    padding: 0 25px;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .container-projectex-active {
     padding: 0 25px;
     /* background-color: salmon; */
     display: flex;
