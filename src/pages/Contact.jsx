@@ -9,8 +9,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
-import { styled } from "@mui/material/styles";
-// import { Link } from "react-scroll";
 
 const contactList = [
   {
@@ -38,25 +36,26 @@ const contactList = [
   },
 ];
 
-const CssTextField = styled(TextField)({
-  "& label.Mui-focused": {
-    color: "green",
-  },
-  "& .MuiInput-underline:after": {
-    borderBottomColor: "green",
-  },
-  "& .MuiOutlinedInput-root": {
-    // "& fieldset": {
-    //   borderColor: "red",
-    // },
-    // "&:hover fieldset": {
-    //   borderColor: "yellow",
-    // },
-    "&.Mui-focused fieldset": {
-      borderColor: "#476040",
-    },
-  },
-});
+// const TextField = styled(TextField)({
+//   "& label.Mui-focused": {
+//     color: "green",
+//   },
+//   "& .MuiInput-underline:after": {
+//     borderBottomColor: "green",
+//   },
+//   "& .MuiOutlinedInput-root": {
+//     // "& fieldset": {
+//     //   borderColor: "red",
+//     // },
+//     // "&:hover fieldset": {
+//     //   borderColor: "yellow",
+//     // },
+//     "&.Mui-focused fieldset": {
+//       borderColor: "#476040",
+//     },
+//   },
+// });
+
 export const Contact = (props) => {
   return (
     <div className="contact" id="contact">
@@ -113,28 +112,42 @@ export const Contact = (props) => {
             >
               Download :
             </div>
-            <button className="button-download-style-cv">CV</button>
-            <button className="button-download-style-resume">Resume</button>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://drive.google.com/file/d/1Kg5PSnyblzGU2T-7GYYNHMdfJYlQJ9lm/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="button-download-style-cv">CV</button>
+            </a>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://drive.google.com/file/d/1yhdaGCCpq-ySZ-dulLjMww2jLUk7PfIS/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="button-download-style-resume">Resume</button>
+            </a>
           </div>
         </div>
 
         <div className="container-contact-right">
           <h1 className="header-text-contact-form">Send Message</h1>
-          <CssTextField
+          <TextField
             id="outlined-basic"
             label="Your Email"
             variant="outlined"
             className="message-textfield"
             required
           />
-          <CssTextField
+          <TextField
             id="outlined-basic"
             label="Topic"
             variant="outlined"
             className="message-textfield"
             required
           />
-          <CssTextField
+          <TextField
             id="outlined-basic"
             label="Detail"
             variant="outlined"

@@ -15,7 +15,6 @@ const Navbar = () => {
       <nav className="navbar">
         <Link to="aboutme" className="logo">
           <img src={logo} alt="logo" />
-          {/* <span className="logoname">SOPHON</span> */}
         </Link>
         <div className="hamburger" onClick={handleClick}>
           {click ? (

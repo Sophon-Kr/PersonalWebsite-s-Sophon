@@ -4,7 +4,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   transition: 0.3s ease-in;
   overflow: hidden;
   background-color: white;
@@ -18,8 +18,6 @@
     0px 4.4px 12px -11px rgba(0, 0, 0, 0.034),
     0px 6.8px 18.6px -11px rgba(0, 0, 0, 0.039),
     0px 12px 33px -11px rgba(0, 0, 0, 0.05);
-
-  /* background-color: var(--background-color); */
 }
 
 .header .navbar {
@@ -39,9 +37,7 @@
   font-size: 30px;
   color: var(--green3-color);
 }
-.header .nav-menu a {
-  /* color: #212121; */
-}
+
 
 .header .navbar img {
   width: 65px;
