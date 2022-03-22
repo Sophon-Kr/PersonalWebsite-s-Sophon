@@ -11,7 +11,7 @@ export async function sendEmail({ sendFrom, subjectData, sendText }) {
       }
     )
     .then((res) => {
-      console.log("res.data", res.data);
+      //console.log("res.data", res.data);
       return res.data;
     });
 }
