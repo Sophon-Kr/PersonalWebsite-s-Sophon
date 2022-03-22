@@ -12,6 +12,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { sendEmail } from "../services/sendmail.service";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+// import Slide from "@mui/material/Slide";
 
 const contactList = [
   {
@@ -70,7 +71,7 @@ export const Contact = (props) => {
       subjectData: subject,
       sendText: textDetail,
     });
-    handleSend(statusSend.status);
+    await handleSend(statusSend.status);
   };
 
   const handleClerForm = () => {
@@ -204,7 +205,7 @@ export const Contact = (props) => {
         open={sendComplete}
         autoHideDuration={3000}
         onClose={handleCloseComplete}
-        TransitionComponent="SlideTransition"
+        // TransitionComponent={<Slide {...props} direction="up" />}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <Alert
@@ -219,7 +220,7 @@ export const Contact = (props) => {
         open={sendFailure}
         autoHideDuration={3000}
         onClose={handleCloseFailure}
-        TransitionComponent="SlideTransition"
+        // TransitionComponent={<Slide {...props} direction="up" />}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <Alert
