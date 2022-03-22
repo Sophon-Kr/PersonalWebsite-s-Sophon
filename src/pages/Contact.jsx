@@ -71,7 +71,6 @@ export const Contact = (props) => {
       sendText: textDetail,
     });
     handleSend(statusSend.status);
-    // console.log(statusSend.status);
   };
 
   const handleClerForm = () => {
