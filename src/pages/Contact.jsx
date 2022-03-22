@@ -9,6 +9,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
+import { sendEmail } from "../services/sendmail.service";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 
 const contactList = [
   {
@@ -36,27 +39,47 @@ const contactList = [
   },
 ];
 
-// const TextField = styled(TextField)({
-//   "& label.Mui-focused": {
-//     color: "green",
-//   },
-//   "& .MuiInput-underline:after": {
-//     borderBottomColor: "green",
-//   },
-//   "& .MuiOutlinedInput-root": {
-//     // "& fieldset": {
-//     //   borderColor: "red",
-//     // },
-//     // "&:hover fieldset": {
-//     //   borderColor: "yellow",
-//     // },
-//     "&.Mui-focused fieldset": {
-//       borderColor: "#476040",
-//     },
-//   },
-// });
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 export const Contact = (props) => {
+  const [email, setEmail] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [textDetail, setTextDetail] = React.useState("");
+  const [sendFailure, setSendFailure] = React.useState(false);
+  const [sendComplete, setSendComplete] = React.useState(false);
+
+  const handleSend = (status) => {
+    if (status === 2000 || status === "2000") {
+      setSendComplete(true);
+    } else {
+      setSendFailure(true);
+    }
+  };
+  const handleCloseComplete = (status) => {
+    setSendComplete(false);
+  };
+  const handleCloseFailure = (status) => {
+    setSendFailure(false);
+  };
+
+  const handleSendEmail = async () => {
+    const statusSend = await sendEmail({
+      sendFrom: email,
+      subjectData: subject,
+      sendText: textDetail,
+    });
+    handleSend(statusSend.status);
+    // console.log(statusSend.status);
+  };
+
+  const handleClerForm = () => {
+    setEmail("");
+    setSubject("");
+    setTextDetail("");
+  };
+
   return (
     <div className="contact" id="contact">
       <div className="maincontainer-contact">
@@ -139,6 +162,8 @@ export const Contact = (props) => {
             variant="outlined"
             className="message-textfield"
             required
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
           />
           <TextField
             id="outlined-basic"
@@ -146,6 +171,8 @@ export const Contact = (props) => {
             variant="outlined"
             className="message-textfield"
             required
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
           />
           <TextField
             id="outlined-basic"
@@ -155,13 +182,55 @@ export const Contact = (props) => {
             multiline
             required
             rows={4}
+            value={textDetail}
+            onChange={(event) => setTextDetail(event.target.value)}
           />
           <div className="button-component ">
-            <button className="button-contact-style-send">Send</button>
-            <button className="button-contact-style-cancel">Cancel</button>
+            <button
+              className="button-contact-style-send"
+              onClick={handleSendEmail}
+            >
+              Send
+            </button>
+            <button
+              className="button-contact-style-cancel"
+              onClick={handleClerForm}
+            >
+              Cancel
+            </button>
           </div>
         </div>
       </div>
+      <Snackbar
+        open={sendComplete}
+        autoHideDuration={3000}
+        onClose={handleCloseComplete}
+        TransitionComponent="SlideTransition"
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleCloseComplete}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Send Complete!
+        </Alert>
+      </Snackbar>
+      <Snackbar
+        open={sendFailure}
+        autoHideDuration={3000}
+        onClose={handleCloseFailure}
+        TransitionComponent="SlideTransition"
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+      >
+        <Alert
+          onClose={handleCloseFailure}
+          sx={{ width: "100%" }}
+          severity="error"
+        >
+          Send Failure!
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
