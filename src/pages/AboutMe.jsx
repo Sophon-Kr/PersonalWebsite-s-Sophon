@@ -27,7 +27,7 @@ export const AboutMe = (props) => {
             such as UX/UI design,website design and graphic design. It would be
             a valuable experience to be work as software engineering.<br></br>
             <span className="interest-aboutme-text">
-              I am interested in front-end developer.
+              I am interested in full stack developer.
             </span>
           </div>
           <div className="nav-item-aboutme">
