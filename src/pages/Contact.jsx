@@ -137,7 +137,7 @@ export const Contact = (props) => {
             </div>
             <a
               style={{ textDecoration: "none", color: "black" }}
-              href="https://drive.google.com/file/d/1cFwARb1lAWgP8c39rBuBU-83uuCNfp-e/view?usp=sharing"
+              href="https://drive.google.com/file/d/1uL2G0ybIj6cGHiDD8P3CbiOnhTss5b1t/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -145,7 +145,7 @@ export const Contact = (props) => {
             </a>
             <a
               style={{ textDecoration: "none", color: "black" }}
-              href="https://drive.google.com/file/d/1vTUnok8Y_11ZYimYtL0-AUzIefOrmVE_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Fr9xiCHYjONVa5YpjrbzIi0ssEbsVsS1/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
