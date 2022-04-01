@@ -20,9 +20,9 @@ export const AboutMe = (props) => {
           </div>
           <div className="descriptionaboutme">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-            am a fourth-year student in Faculty of Engineering at Mahidol
-            University. I have an ability to develope many part of website such
-            as develope front-end by react and vue,back-end by node.js and
+            am a fourth-year student in the Faculty of Engineering at Mahidol
+            University. I have an ability to develop many part of website such
+            as develop front-end by react and vue,back-end by node.js and
             manage database SQL and NoSQL. I am also good at designing works
             such as UX/UI design,website design and graphic design. It would be
             a valuable experience to be work as software engineering.<br></br>
