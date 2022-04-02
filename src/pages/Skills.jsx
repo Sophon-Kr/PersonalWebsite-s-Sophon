@@ -16,6 +16,8 @@ import {
   SiHtml5,
   SiCss3,
   SiNodedotjs,
+  SiGithub,
+  SiDocker,
 } from "react-icons/si";
 import { FaJava, FaReact, FaVuejs } from "react-icons/fa";
 import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";
@@ -78,6 +80,32 @@ const otherSkills = [
     id: 5,
     text: (
       <span className="center-text">
+        <div>GitHub</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiGithub className="size-icon"></SiGithub>
+      </div>
+    ),
+  },
+  {
+    id: 6,
+    text: (
+      <span className="center-text">
+        <div>Docker</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiDocker className="size-icon"></SiDocker>
+      </div>
+    ),
+  },
+  {
+    id: 7,
+    text: (
+      <span className="center-text">
         <div>Adobe</div>
         <div>Photoshop</div>
       </span>
@@ -89,7 +117,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     text: (
       <span className="center-text">
         <div>Adobe XD</div>
@@ -102,7 +130,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 7,
+    id: 9,
     text: (
       <span className="center-text">
         <div>Adobe</div>
@@ -116,7 +144,7 @@ const otherSkills = [
     ),
   },
   {
-    id: 8,
+    id: 10,
     text: (
       <span className="center-text">
         <div>MS office</div>
