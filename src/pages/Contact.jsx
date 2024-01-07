@@ -12,7 +12,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import { sendEmail } from "../services/sendmail.service";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
-// import Slide from "@mui/material/Slide";
 
 const contactList = [
   {
@@ -29,7 +28,7 @@ const contactList = [
   {
     id: 2,
     icon: <MdEmail className="icon-contact" />,
-    text: "sophonkraipinit@gmail.com",
+    text: "sophonkripinit@gmail.com",
     linkto: "",
   },
   {
@@ -156,7 +155,7 @@ export const Contact = (props) => {
 
         <div className="container-contact-right">
           <h1 className="header-text-contact-form">Send Message</h1>
-          <h5 className="header-text-contact-form-disable">(Temporary disable)</h5>
+          <h5 className="header-text-contact-form-disable">(fields temporary disable)</h5>
           <TextField
             disabled={true}
             id="outlined-basic"
@@ -193,12 +192,15 @@ export const Contact = (props) => {
             <button
               className="button-contact-style-send"
               onClick={handleSendEmail}
+              disabled={true}
             >
               Send
             </button>
             <button
               className="button-contact-style-cancel"
               onClick={handleClerForm}
+              disabled={true}
+
             >
               Cancel
             </button>

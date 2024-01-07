@@ -56,7 +56,7 @@ export const WorkEx = (props) => {
             </i></h2>
             <ul>
               <li>
-                <desc className="workex-description">            • Teacher Assistant for Discrete Mathematics for engineer student of Mahidol University responsible for supporting the teacher to check students’ assignments and check midterm and final tests then give points and summary points and send it back.
+                <desc className="workex-description">            • Teacher Assistant for Discrete Mathematics for engineer student of Mahidol University responsible for supporting the teacher to check students’ assignments and check midterm and final tests then give points, summary points and send it back.
                 </desc>
               </li>
             </ul>
