@@ -32,16 +32,15 @@ export const Education = (props) => {
                   color: "#476040",
                 }}
               >
-                College
+                Bachelor's Degree
               </div>
               <div>
                 <span>Years : </span>
-                <span>2018-Present </span>
+                <span>2018-2022 </span>
               </div>
               <div>
                 <span>
-                  Faculty of Engineering, Major in Computer Engineering,Mahidol
-                  University
+                  Computer Engineering, Mahidol University.
                 </span>
               </div>
             </div>
@@ -62,7 +61,8 @@ export const Education = (props) => {
                 <span>Years : </span>
                 <span>2012-2017</span>
               </div>
-              <div>Srikranuanwittayakom School (Science - Math)</div>
+              <div>High school in  Science and Mathematics Program, Srikranuanwittayakom School.
+              </div>
             </div>
 
             <div className="bordery">

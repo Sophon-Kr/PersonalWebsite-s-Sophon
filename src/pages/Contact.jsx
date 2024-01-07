@@ -137,26 +137,28 @@ export const Contact = (props) => {
             </div>
             <a
               style={{ textDecoration: "none", color: "black" }}
-              href="https://drive.google.com/file/d/1uL2G0ybIj6cGHiDD8P3CbiOnhTss5b1t/view?usp=sharing"
+              href="https://drive.google.com/file/d/1UJPOuJ8EozQ9dDEMKT4P39oEnRK6ajPU/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
-              <button className="button-download-style-cv">CV</button>
+              <button className="button-download-style-cv">Resume / CV</button>
             </a>
-            <a
+            {/* <a
               style={{ textDecoration: "none", color: "black" }}
               href="https://drive.google.com/file/d/1Fr9xiCHYjONVa5YpjrbzIi0ssEbsVsS1/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
               <button className="button-download-style-resume">Resume</button>
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div className="container-contact-right">
           <h1 className="header-text-contact-form">Send Message</h1>
+          <h5 className="header-text-contact-form-disable">(Temporary disable)</h5>
           <TextField
+            disabled={true}
             id="outlined-basic"
             label="Your Email"
             variant="outlined"
@@ -166,6 +168,7 @@ export const Contact = (props) => {
             onChange={(event) => setEmail(event.target.value)}
           />
           <TextField
+            disabled={true}
             id="outlined-basic"
             label="Topic"
             variant="outlined"
@@ -175,6 +178,7 @@ export const Contact = (props) => {
             onChange={(event) => setSubject(event.target.value)}
           />
           <TextField
+            disabled={true}
             id="outlined-basic"
             label="Detail"
             variant="outlined"

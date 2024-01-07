@@ -46,7 +46,15 @@
 .header-text-contact-form {
   font-size: 30px;
   font-weight: bold;
+  /* margin-bottom: 20px; */
+  color: var(--green3-color);
+  align-self: center;
+}
+.header-text-contact-form-disable {
+  font-size: 16px;
+  font-weight: bold;
   margin-bottom: 20px;
+  margin-top: -20px;
   color: var(--green3-color);
   align-self: center;
 }

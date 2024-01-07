@@ -18,9 +18,9 @@ function App() {
     <Provider store={store}>
       <Navbar />
       <AboutMe />
-      <Education />
-      <Skills />
       <Experiences />
+      <Skills />
+      <Education />
       <Activity />
       <Hobbies />
       <Contact />

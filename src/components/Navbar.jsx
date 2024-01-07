@@ -38,14 +38,14 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="education"
+              to="experiences"
               spy={true}
               smooth={true}
               offset={-60}
               duration={50}
               onClick={closeMenu}
             >
-              Education
+              Experience
             </Link>
           </li>
           <li className="nav-item">
@@ -62,16 +62,17 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="experiences"
+              to="education"
               spy={true}
               smooth={true}
               offset={-60}
               duration={50}
               onClick={closeMenu}
             >
-              Experiences
+              Education
             </Link>
           </li>
+
           <li className="nav-item">
             <Link
               to="activity"

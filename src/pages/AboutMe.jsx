@@ -19,16 +19,10 @@ export const AboutMe = (props) => {
             </div>
           </div>
           <div className="descriptionaboutme">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
-            am a fourth-year student in the Faculty of Engineering at Mahidol
-            University. I have an ability to develop many part of website such
-            as develop front-end by react and vue,back-end by node.js and
-            manage database SQL and NoSQL. I am also good at designing works
-            such as UX/UI design,website design and graphic design. It would be
-            a valuable experience to be work as software engineering.<br></br>
-            <span className="interest-aboutme-text">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a software engineer based in Bangkok, Thailand with 1 year and 6 months of experience in the software industry. My focus area for the past few years has been mobile development with React Native and full-stack web development with React and Node.js. but I'm also skilled in back-end development with GoLang. furthermore, I can manage database SQL and NoSQL and design mobile UX/UI and web UX/UI. It would be a valuable experience to work as a software engineer so I’m seeking a new opportunity for the position of software engineer.<br></br>
+            {/* <span className="interest-aboutme-text">
               I am interested in full stack developer.
-            </span>
+            </span> */}
           </div>
           <div className="nav-item-aboutme">
             <Link
@@ -37,7 +31,7 @@ export const AboutMe = (props) => {
               smooth={true}
               offset={-50}
               duration={50}
-              // onClick={closeMenu}
+            // onClick={closeMenu}
             >
               Contact Me
             </Link>

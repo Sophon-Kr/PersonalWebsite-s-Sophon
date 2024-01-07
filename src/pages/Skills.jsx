@@ -18,10 +18,21 @@ import {
   SiNodedotjs,
   SiGithub,
   SiDocker,
+  SiTypescript,
+  SiSwift,
+  SiGitlab,
+  SiAmazons3,
+  SiHeroku,
+  SiFirebase,
+  SiJenkins,
+  SiFigma,
 } from "react-icons/si";
-import { FaJava, FaReact, FaVuejs } from "react-icons/fa";
+
+import { FaJava, FaReact, FaVuejs, FaAws } from "react-icons/fa";
 import { RiComputerFill, RiCodeBoxFill } from "react-icons/ri";
 import { ImDatabase } from "react-icons/im";
+import golang from "../assets/golang.png";
+
 
 const otherSkills = [
   {
@@ -90,6 +101,71 @@ const otherSkills = [
     ),
   },
   {
+    id: 11,
+    text: (
+      <span className="center-text">
+        <div>GitLab</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiGitlab className="size-icon"></SiGitlab>
+      </div>
+    ),
+  },
+  {
+    id: 12,
+    text: (
+      <span className="center-text">
+        <div>aws</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <FaAws className="size-icon"></FaAws>
+      </div>
+    ),
+  },
+  {
+    id: 13,
+    text: (
+      <span className="center-text">
+        <div>aws</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiHeroku className="size-icon"></SiHeroku>
+      </div>
+    ),
+  },
+  {
+    id: 14,
+    text: (
+      <span className="center-text">
+        <div>Firebase</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiFirebase className="size-icon"></SiFirebase>
+      </div>
+    ),
+  },
+  {
+    id: 15,
+    text: (
+      <span className="center-text">
+        <div>Jenkins</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiJenkins className="size-icon"></SiJenkins>
+      </div>
+    ),
+  },
+  {
     id: 6,
     text: (
       <span className="center-text">
@@ -113,6 +189,19 @@ const otherSkills = [
     icon: (
       <div className="center-text">
         <SiAdobephotoshop className="size-icon"></SiAdobephotoshop>
+      </div>
+    ),
+  },
+  {
+    id: 16,
+    text: (
+      <span className="center-text">
+        <div>Figma</div>
+      </span>
+    ),
+    icon: (
+      <div className="center-text">
+        <SiFigma className="size-icon"></SiFigma>
       </div>
     ),
   },
@@ -143,19 +232,19 @@ const otherSkills = [
       </div>
     ),
   },
-  {
-    id: 10,
-    text: (
-      <span className="center-text">
-        <div>MS office</div>
-      </span>
-    ),
-    icon: (
-      <div className="center-text">
-        <SiMicrosoftoffice className="size-icon"></SiMicrosoftoffice>
-      </div>
-    ),
-  },
+  // {
+  //   id: 10,
+  //   text: (
+  //     <span className="center-text">
+  //       <div>MS office</div>
+  //     </span>
+  //   ),
+  //   icon: (
+  //     <div className="center-text">
+  //       <SiMicrosoftoffice className="size-icon"></SiMicrosoftoffice>
+  //     </div>
+  //   ),
+  // },
 ];
 
 export const Skills = (props) => {
@@ -163,7 +252,7 @@ export const Skills = (props) => {
     <div className="skills" id="skills">
       <div className="maincontainer-skills">
         <div className="header-skills-1">
-          <span className="w-header">W</span>eb Development Skills{" "}
+          <span className="w-header">D</span>evelopment Skills{" "}
         </div>
         <div className="container-skills-web">
           <div className="card-skills">
@@ -207,24 +296,32 @@ export const Skills = (props) => {
                   JavaScript
                 </div>
                 <div className="skill-item-list">
+                  <SiTypescript
+                    style={{ width: "25px", height: "auto", color: "#137ECE" }}
+                  ></SiTypescript>
+                  Typescript
+                </div>
+              </div>
+              {/* <div className="skill-container-list align-Self-center">
+                <div className="skill-item-list">
                   <FaReact
                     style={{ width: "30px", height: "auto", color: "#5ED3F3" }}
                   ></FaReact>
                   React.js
                 </div>
-              </div>
+              </div> */}
               <div className="skill-container-list align-Self-center">
+                <div className="skill-item-list">
+                  <FaReact
+                    style={{ width: "30px", height: "auto", color: "#5ED3F3" }}
+                  ></FaReact>
+                  React.js
+                </div>
                 <div className="skill-item-list">
                   <FaVuejs
                     style={{ width: "30px", height: "auto", color: "#3FB27F" }}
                   ></FaVuejs>
                   Vue.js
-                </div>
-                <div className="skill-item-list ">
-                  <SiHtml5
-                    style={{ width: "30px", height: "auto", color: "#DD4B25" }}
-                  ></SiHtml5>
-                  HTML
                 </div>
               </div>
               <div className="skill-container-list align-Self-center">
@@ -233,6 +330,30 @@ export const Skills = (props) => {
                     style={{ width: "30px", height: "auto", color: "#006CB4" }}
                   ></SiCss3>
                   CSS
+                </div>
+                <div className="skill-item-list ">
+                  <SiHtml5
+                    style={{ width: "30px", height: "auto", color: "#DD4B25" }}
+                  ></SiHtml5>
+                  HTML
+                </div>
+                {/* <div
+                  className="skill-item-list"
+                  style={{ textAlign: "center" }}
+                >
+                  <SiMaterialui
+                    style={{ width: "30px", height: "auto", color: "#007DC5" }}
+                  ></SiMaterialui>{" "}
+                  Material-UI
+                </div> */}
+              </div>
+              <div className="skill-container-list align-Self-center">
+
+                <div className="skill-item-list ">
+                  <SiSwift
+                    style={{ width: "30px", height: "auto", color: "#F05740" }}
+                  ></SiSwift>
+                  Swift
                 </div>
                 <div
                   className="skill-item-list"
@@ -256,12 +377,22 @@ export const Skills = (props) => {
               ></RiCodeBoxFill>
               <div style={{ color: "#789174" }}>Back-End</div>
             </div>
-            <div className="align-Self-center">
+            <div className="align-Self-center skill-container-list">
               <div className="skill-item-list">
                 <SiNodedotjs
                   style={{ width: "40px", height: "auto", color: "#70B556" }}
                 ></SiNodedotjs>
                 Node.js
+              </div>
+              <div className="skill-item-list">
+                <img
+                  src={golang}
+                  alt="icons8-golang-48"
+                  className="icons8-golang-48"
+                  style={{ width: "40px", height: "auto" }}
+
+                />
+                Golang
               </div>
             </div>
           </div>
